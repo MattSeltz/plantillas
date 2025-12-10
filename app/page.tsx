@@ -136,7 +136,7 @@ const templates = [
 ];
 
 export default function TemplateEcommerce() {
-  const handleEmailContact = (templateName) => {
+  const handleEmailContact = (templateName: string) => {
     const subject = `Consulta sobre plantilla: ${templateName}`;
     const body = `Hola,\n\nEstoy interesado en la plantilla "${templateName}".\n\n¿Podrían enviarme más información?\n\nGracias.`;
     window.location.href = `mailto:matitec00@gmail.com?subject=${encodeURIComponent(
